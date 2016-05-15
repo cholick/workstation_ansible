@@ -22,3 +22,22 @@ ansible-playbook workstation.yml inventory_local
 1. Sublime
     * Start & wait for restart prompt (package control sets up in background)
     * Enter license
+
+
+### Notes
+
+When the cows are too noisy:
+```
+export ANSIBLE_NOCOWS=1
+```
+
+```
+ ____________
+< Goodbye :( >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```

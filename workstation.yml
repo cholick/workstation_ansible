@@ -4,3 +4,4 @@
   roles:
     - dot_files
     - sublime
+    - util
