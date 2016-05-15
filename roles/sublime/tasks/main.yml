@@ -1,0 +1,32 @@
+---
+
+- name: Check casks
+  shell: brew tap
+  changed_when: False
+  always_run: yes
+  register: casks
+
+- name: Tap versions
+  shell: brew tap caskroom/versions
+  when: "'caskroom/versions' not in casks.stdout"
+
+- name: Install Sublime
+  homebrew_cask:
+    name: sublime-text3
+    state: present
+
+- name: Copy configs
+  copy:
+    src: "{{ item }}"
+    dest: ~/Library/Application Support/Sublime Text 3/Packages/User/
+  with_items:
+    - Default (OSX).sublime-keymap
+    - NetBeans.tmTheme
+    - Preferences.sublime-settings
+    - Package Control.sublime-settings
+    - Markdown.sublime-settings
+
+- name: Install package control
+  copy:
+    src: Package Control.sublime-package
+    dest: ~/Library/Application Support/Sublime Text 3/Installed Packages/

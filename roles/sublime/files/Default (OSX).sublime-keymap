@@ -1,0 +1,25 @@
+[{
+	"keys": ["home"],
+	"command": "move_to",
+	"args": {
+		"to": "bol"
+	}
+}, {
+	"keys": ["end"],
+	"command": "move_to",
+	"args": {
+		"to": "eol"
+	}
+}, {
+	"keys": ["command+end"],
+	"command": "move_to",
+	"args": {
+		"to": "eof"
+	}
+}, {
+	"keys": ["command+home"],
+	"command": "move_to",
+	"args": {
+		"to": "bof"
+	}
+}]
