@@ -1,9 +1,5 @@
 ---
 
-- name: Set shell to zsh
-  shell: "chsh -s /usr/local/bin/zsh"
-  when: "'/usr/local/bin/zsh' != ansible_env.SHELL"
-
 - name: Check if zprezto on disk
   stat:
     path: ~/.zprezto
@@ -26,3 +22,13 @@
     - .zpreztorc
     - .zprofile
     - .zshrc
+
+- name: Enable brew zsh binary
+  lineinfile:
+    dest: /etc/shells
+    line: /usr/local/bin/zsh
+    state: present
+
+- name: Set shell to zsh
+  shell: "chsh -s /usr/local/bin/zsh"
+  when: "'/usr/local/bin/zsh' != ansible_env.SHELL"
