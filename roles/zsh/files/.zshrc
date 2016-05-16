@@ -12,6 +12,8 @@ alias -g ....='../../..'
 alias -g .....='../../../..'
 alias -g ......='../../../../..'
 
+alias rm='nocorrect rm'
+
 # Configure zsh plugins
 
 export HISTFILE=~/.zsh_history

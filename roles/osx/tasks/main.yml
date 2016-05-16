@@ -1,0 +1,19 @@
+---
+
+# see: https://github.com/ansible/ansible-modules-extras/issues/1742
+#- name: Scrollbars
+#  osx_defaults:
+#    domain: NSGlobalDomain
+#    key: AppleShowScrollBars
+#    type: "string"
+#    value: Always
+
+- name: Scrollbars
+  shell: defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
+
+- name: Unnatural scrolling
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: com.apple.swipescrolldirection
+    type: bool
+    value: false
