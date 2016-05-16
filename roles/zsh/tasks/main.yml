@@ -4,14 +4,14 @@
   stat:
     path: ~/.zprezto
   always_run: yes
-  changed_when: False
+  changed_when: false
   register: zprezto_dir
 
 - name: Clone Prezto
   git:
     repo: https://github.com/sorin-ionescu/prezto.git
     dest: ~/.zprezto
-  when: zprezto_dir.stat.exists == False
+  when: zprezto_dir.stat.exists == false
 
 - name: Copy .zpreztorc
   copy:
@@ -28,6 +28,7 @@
     dest: /etc/shells
     line: /usr/local/bin/zsh
     state: present
+  become: true
 
 - name: Set shell to zsh
   shell: "chsh -s /usr/local/bin/zsh"

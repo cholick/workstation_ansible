@@ -14,7 +14,7 @@
 ### Installation
 
 ```
-ansible-playbook workstation.yml inventory_local
+ansible-playbook --ask-become-pass workstation.yml -i inventory_local
 ```
 
 ### Testing

@@ -2,7 +2,7 @@
 
 - name: Check casks
   shell: brew tap
-  changed_when: False
+  changed_when: false
   always_run: yes
   register: casks
 
