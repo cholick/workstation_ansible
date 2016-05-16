@@ -1,0 +1,28 @@
+---
+
+- name: Set shell to zsh
+  shell: "chsh -s /usr/local/bin/zsh"
+  when: "'/usr/local/bin/zsh' != ansible_env.SHELL"
+
+- name: Check if zprezto on disk
+  stat:
+    path: ~/.zprezto
+  always_run: yes
+  changed_when: False
+  register: zprezto_dir
+
+- name: Clone Prezto
+  git:
+    repo: https://github.com/sorin-ionescu/prezto.git
+    dest: ~/.zprezto
+  when: zprezto_dir.stat.exists == False
+
+- name: Copy .zpreztorc
+  copy:
+    src: "{{ item }}"
+    dest: ~/
+    mode: 0644
+  with_items:
+    - .zpreztorc
+    - .zprofile
+    - .zshrc

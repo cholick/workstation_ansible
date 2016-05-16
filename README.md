@@ -4,7 +4,7 @@
 1. `xcode-select --install`
 1. Install [Homebrew](https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Installation.md#installation)
 1. Install `pyenv`
-    `brew install pyenv`
+    * `brew install pyenv`
 1. Setup `pyenv`
     * `pyenv install 2.7.11 && pyenv rehash`
     * `pyenv global 2.7.11`
@@ -16,6 +16,11 @@
 ```
 ansible-playbook workstation.yml inventory_local
 ```
+
+### Testing
+
+Setting up an OSX vm
+* https://blog.frd.mn/install-os-x-10-10-yosemite-in-virtualbox/
 
 ### Cleanup
 
