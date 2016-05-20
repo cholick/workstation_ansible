@@ -47,3 +47,10 @@ export ANSIBLE_NOCOWS=1
                 ||----w |
                 ||     ||
 ```
+
+### References
+
+* https://whiskykilo.com/mac-tweaks/
+* https://github.com/hjuutilainen/dotfiles/blob/master/bin/osx-user-defaults.sh
+* https://github.com/mathiasbynens/dotfiles/blob/master/.osx
+* https://gist.github.com/zenorocha/7159780

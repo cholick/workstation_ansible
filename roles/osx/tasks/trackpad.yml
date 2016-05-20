@@ -1,0 +1,11 @@
+---
+
+- name: Unnatural scrolling
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: com.apple.swipescrolldirection
+    type: bool
+    value: false
+
+# Tap to click? Enable when in an environment I can test
+#   defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true

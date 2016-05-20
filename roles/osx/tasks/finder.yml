@@ -1,0 +1,8 @@
+---
+
+- name: Show all extensions
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: AppleShowAllExtensions
+    type: bool
+    value: True

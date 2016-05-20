@@ -1,0 +1,13 @@
+---
+
+# see: https://github.com/ansible/ansible-modules-extras/issues/1742
+#- name: Scrollbars
+#  osx_defaults:
+#    domain: NSGlobalDomain
+#    key: AppleShowScrollBars
+#    type: "string"
+#    value: Always
+
+- name: Scrollbars
+  shell: defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
+  changed_when: false # ugly, but until 1742 fixed

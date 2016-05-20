@@ -1,0 +1,15 @@
+---
+
+- name: Lower left hotcorner lock screen
+  osx_defaults:
+    domain: com.apple.dock
+    key: wvous-bl-corner
+    type: int
+    value: 10
+
+- name: Upper left hotcorner disable screensaver
+  osx_defaults:
+    domain: com.apple.dock
+    key: wvous-tl-corner
+    type: int
+    value: 6

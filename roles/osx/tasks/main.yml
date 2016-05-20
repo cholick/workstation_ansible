@@ -1,34 +1,7 @@
 ---
 
-# see: https://github.com/ansible/ansible-modules-extras/issues/1742
-#- name: Scrollbars
-#  osx_defaults:
-#    domain: NSGlobalDomain
-#    key: AppleShowScrollBars
-#    type: "string"
-#    value: Always
-
-- name: Scrollbars
-  shell: defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
-  changed_when: false # ugly, but until 1742 fixed
-
-- name: Unnatural scrolling
-  osx_defaults:
-    domain: NSGlobalDomain
-    key: com.apple.swipescrolldirection
-    type: bool
-    value: false
-
-- name: Key repeat to 30ms
-  osx_defaults:
-    domain: NSGlobalDomain
-    key: KeyRepeat
-    type: int
-    value: 2
-
-- name: Key repeat delat to 375ms
-  osx_defaults:
-    domain: NSGlobalDomain
-    key: InitialKeyRepeat
-    type: int
-    value: 25
+- include: finder.yml
+- include: hot_corners.yml
+- include: keyboard.yml
+- include: misc.yml
+- include: trackpad.yml
