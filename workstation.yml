@@ -4,6 +4,7 @@
   roles:
     - util
     - dot_files
-    - sublime
     - zsh
     - osx
+    - sublime
+    - alfred

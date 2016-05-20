@@ -1,6 +1,7 @@
 
 ### Bootstrap
 
+1. Install [Dropbox](https://www.dropbox.com/downloading) (quick & dirty secrets solution)
 1. `xcode-select --install`
 1. Install [Homebrew](https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Installation.md#installation)
 1. Install `pyenv`
@@ -27,7 +28,7 @@ Setting up an OSX vm
 1. Sublime
     * Start & wait for restart prompt (package control sets up in background)
     * Enter license
-
+1. Reboot to pickup config writes
 
 ### Notes
 

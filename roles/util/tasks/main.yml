@@ -9,6 +9,7 @@
     - git
     - jq
     - openssl
+    - ssh-copy-id
     - tree
     - watch
     - wget
