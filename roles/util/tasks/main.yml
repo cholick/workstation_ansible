@@ -7,8 +7,10 @@
   with_items:
     - curl
     - git
+    - gpg
     - jq
     - openssl
+    - mercurial #gvm wants this
     - ssh-copy-id
     - tree
     - watch
