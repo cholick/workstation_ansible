@@ -67,11 +67,31 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # *vm
 
-[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
+function nvm {
+	unset -f nvm
+	echo "Loading nvm"
+	[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
+	nvm $@
+}
 
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" && -z $(which sdkman-init.sh | grep '/sdkman-init.sh') ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+function sdk {
+	unset -f sdk
+	echo "Loading sdkman"
+	[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" && -z $(which sdkman-init.sh | grep '/sdkman-init.sh') ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+	sdk $@
+}
 
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+function pyenv {
+	unset -f pyenv
+	echo "Loading pyenv"
+	if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+	pyenv $@
+}
 
-export PATH="$PATH:$HOME/.rvm/bin"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+function rvm {
+	unset -f rvm
+	echo "Loading rvm"
+	export PATH="$PATH:$HOME/.rvm/bin"
+	[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+	rvm $@
+}
