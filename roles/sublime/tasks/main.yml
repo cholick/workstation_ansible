@@ -21,10 +21,11 @@
     dest: ~/Library/Application Support/Sublime Text 3/Packages/User/
   with_items:
     - Default (OSX).sublime-keymap
-    - NetBeans.tmTheme
-    - Preferences.sublime-settings
-    - Package Control.sublime-settings
     - Markdown.sublime-settings
+    - NetBeans.tmTheme
+    - Package Control.sublime-settings
+    - Preferences.sublime-settings
+    - PlainTasks.sublime-settings
 
 - name: Install package control
   copy:
