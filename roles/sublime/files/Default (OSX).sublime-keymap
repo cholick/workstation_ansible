@@ -22,4 +22,10 @@
 	"args": {
 		"to": "bof"
 	}
+}, {
+	"keys": ["command+shift+u"],
+	"command": "open_url"
+}, {
+	"keys": ["control+u"],
+	"command": "soft_undo"
 }]
