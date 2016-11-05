@@ -3,14 +3,18 @@
 
 1. Install [Dropbox](https://www.dropbox.com/downloading) (quick & dirty secrets solution)
 1. `xcode-select --install`
-1. Install [Homebrew](https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Installation.md#installation)
+1. Install [Homebrew](https://github.com/Homebrew/brew/blob/master/docs/Installation.md#installation)
+  * `mkdir ~/Applications; cd ~/Applications`
+  * `git clone https://github.com/Homebrew/brew/`
+  * `export PATH=$PATH:$HOME/Applications/brew/bin`
 1. Install `pyenv`
-    * `brew install pyenv`
+  * `brew install pyenv`
 1. Setup `pyenv`
-    * `pyenv install 2.7.11 && pyenv rehash`
-    * `pyenv global 2.7.11`
+  * `eval "$(pyenv init -)"`
+  * `pyenv install 2.7.12 && pyenv rehash`
+  * `pyenv shell 2.7.12`
 1. Install `ansible`
-    * `pip install ansible`
+  * `pip install ansible`
 
 ### Installation
 
@@ -26,8 +30,8 @@ Setting up an OSX vm
 ### Cleanup
 
 1. Sublime
-    * Start & wait for restart prompt (package control sets up in background)
-    * Enter license
+  * Start & wait for restart prompt (package control sets up in background)
+  * Enter license
 1. Reboot to pickup config writes
 
 ### Notes
