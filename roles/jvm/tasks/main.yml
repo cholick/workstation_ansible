@@ -1,0 +1,9 @@
+---
+
+- name: Install sdkman
+  script: get.sdkman.io.sh
+
+- name: Install Java
+  homebrew_cask:
+    name: java
+    state: present
