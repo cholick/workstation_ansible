@@ -62,7 +62,7 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export _JAVA_OPTIONS="-Xmx2g"
 
 export PATH=/usr/local/bin:$HOME/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin
-export PATH=$PATH:$HOME/Applications/homebrew/bin
+export PATH=$PATH:$HOME/Applications/brew/bin
 export PATH=$PATH:$HOME/Applications
 
 export GOPATH=$HOME/go
@@ -74,10 +74,11 @@ export PATH=$PATH:~/Applications
 
 # *vm
 
+export NVM_DIR="$HOME/.nvm"
 function nvm {
-	unset -f nvm
+    unset -f nvm
 	echo "Loading nvm"
-	[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
+	. "/Users/mc/Applications/brew/opt/nvm/nvm.sh"
 	nvm $@
 }
 
