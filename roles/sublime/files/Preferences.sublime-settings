@@ -2,7 +2,10 @@
 	"color_scheme": "Packages/User/NetBeans.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Menlo",
+	// Normal
 	"font_size": 12,
+	// Present
+	// "font_size": 16,
 	"ignored_packages":
 	[
 		"Vintage"

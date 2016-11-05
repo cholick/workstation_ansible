@@ -6,13 +6,9 @@
   always_run: yes
   register: casks
 
-- name: Tap versions
-  shell: brew tap caskroom/versions
-  when: "'caskroom/versions' not in casks.stdout"
-
 - name: Install Sublime
   homebrew_cask:
-    name: sublime-text3
+    name: sublime-text
     state: present
 
 - name: Copy configs
