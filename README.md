@@ -22,6 +22,10 @@
 ansible-playbook --ask-become-pass workstation.yml -i inventory_local
 ```
 
+### Manual
+1. Register Alfred & setup sync folder (~/Dropbox/integration/alfred)
+1. Total Spaces
+
 ### Testing
 
 Setting up an OSX vm
@@ -32,7 +36,6 @@ Setting up an OSX vm
 1. Sublime
   * Start & wait for restart prompt (package control sets up in background)
   * Enter license
-1. Register Alfred & setup sync folder (~/Dropbox/integration/alfred)
 1. Reboot to pickup config writes
 
 ### Notes
@@ -57,5 +60,6 @@ export ANSIBLE_NOCOWS=1
 
 * https://whiskykilo.com/mac-tweaks/
 * https://github.com/hjuutilainen/dotfiles/blob/master/bin/osx-user-defaults.sh
+* https://github.com/josh-/dotfiles/blob/master/osx
 * https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 * https://gist.github.com/zenorocha/7159780
