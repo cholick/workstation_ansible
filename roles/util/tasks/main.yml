@@ -11,6 +11,7 @@
     - jq
     - openssl
     - mercurial #gvm wants this
+    - nvm
     - ssh-copy-id
     - tree
     - watch

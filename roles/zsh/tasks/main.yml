@@ -31,5 +31,5 @@
   become: true
 
 - name: Set shell to zsh
-  shell: "chsh -s /usr/local/bin/zsh"
+  shell: "chsh -s /bin/zsh"
   when: "'/usr/local/bin/zsh' != ansible_env.SHELL"

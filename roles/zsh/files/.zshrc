@@ -14,6 +14,8 @@ alias -g ......='../../../../..'
 
 alias rm='nocorrect rm'
 
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
 # Configure zsh plugins
 
 export HISTFILE=~/.zsh_history
@@ -66,6 +68,9 @@ export PATH=$PATH:$HOME/Applications
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
+
+export PATH=$PATH:~/Applications/homebrew/bin
+export PATH=$PATH:~/Applications
 
 # *vm
 
