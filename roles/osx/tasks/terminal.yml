@@ -1,0 +1,6 @@
+---
+
+- name: Copy over preferences
+  copy:
+    src: com.apple.Terminal.plist
+    dest: ~/Library/Preferences/

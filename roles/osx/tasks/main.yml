@@ -5,3 +5,4 @@
 - include: keyboard.yml
 - include: misc.yml
 - include: trackpad.yml
+- include: terminal.yml
