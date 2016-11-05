@@ -32,6 +32,7 @@ Setting up an OSX vm
 1. Sublime
   * Start & wait for restart prompt (package control sets up in background)
   * Enter license
+1. Register Alfred & setup sync folder (~/Dropbox/integration/alfred)
 1. Reboot to pickup config writes
 
 ### Notes

@@ -4,16 +4,3 @@
   homebrew_cask:
     name: alfred
     state: present
-
-- name: Copy lisence
-  copy:
-    src: ~/Dropbox/integration/alfred/license.plist
-    dest: ~/Library/Application Support/Alfred 2/
-    mode: 0644
-
-- name: Set plist entry
-  osx_plist:
-    key: syncfolder
-    value: ~/Dropbox/integration/alfred
-    type: string
-    path: ~/Library/Preferences/com.runningwithcrayons.Alfred-Preferences.plist
