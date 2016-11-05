@@ -6,3 +6,10 @@
     key: AppleShowAllExtensions
     type: bool
     value: True
+
+- name: Default to list view
+  osx_defaults:
+    domain: com.apple.finder
+    key: FXPreferredViewStyle
+    type: string
+    value: Nlsv
