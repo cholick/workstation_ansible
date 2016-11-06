@@ -1,0 +1,24 @@
+---
+
+- name: Install dnsmasq
+  homebrew:
+    name: dnsmasq
+    state: present
+
+- name: Copy over configuration
+  copy:
+    src: dnsmasq.conf
+    # todo: read homebrew location or make configurable
+    dest: ~/Applications/brew/etc/dnsmasq.conf
+    mode: 0644
+
+- name: Load dnsmasq as service
+  command: brew services start dnsmasq
+  become: true
+
+- name: Change dns to localhost
+  script: change_dns.sh
+  become: true
+
+## Notes
+# https://gist.github.com/ogrrd/5831371

@@ -63,3 +63,5 @@ export ANSIBLE_NOCOWS=1
 * https://github.com/josh-/dotfiles/blob/master/osx
 * https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 * https://gist.github.com/zenorocha/7159780
+* https://github.com/seattle-beach/alfalfa
+* https://github.com/kejadlen/dotfiles

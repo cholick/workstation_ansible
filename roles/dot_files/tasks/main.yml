@@ -1,6 +1,6 @@
 ---
 
-- name:  Emacs config
+- name: Emacs config
   copy:
     src: default.el
     dest: ~/.emacs
