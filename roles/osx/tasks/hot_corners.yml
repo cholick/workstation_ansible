@@ -1,11 +1,16 @@
 ---
 
-- name: Lower left hotcorner lock screen
-  osx_defaults:
-    domain: com.apple.dock
-    key: wvous-bl-corner
-    type: int
-    value: 10
+# Possible values:
+#  0: no-op
+#  2: Mission Control (all windows)
+#  3: Show application windows
+#  4: Desktop
+#  5: Start screen saver
+#  6: Disable screen saver
+#  7: Dashboard
+# 10: Put display to sleep
+# 11: Launchpad
+# 12: Notification Center
 
 - name: Upper left hotcorner disable screensaver
   osx_defaults:
@@ -13,3 +18,17 @@
     key: wvous-tl-corner
     type: int
     value: 6
+
+- name: Lower left hotcorner lock screen
+  osx_defaults:
+    domain: com.apple.dock
+    key: wvous-bl-corner
+    type: int
+    value: 10
+
+- name: Lower right to show desktop
+  osx_defaults:
+    domain: com.apple.dock
+    key: wvous-br-corner
+    type: int
+    value: 4
