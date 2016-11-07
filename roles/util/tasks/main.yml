@@ -10,6 +10,7 @@
     - gpg
     - jq
     - openssl
+    - protobuf
     - mercurial #gvm wants this
     - nvm
     - ssh-copy-id
