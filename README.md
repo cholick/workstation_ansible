@@ -24,6 +24,14 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
 
 ### Manual
 1. Register Alfred & setup sync folder (~/Dropbox/integration/alfred)
+1. Chrome: https://www.google.com/chrome/browser/desktop/index.html
+    * Advanced sync settings -> Disable open tabs, history, autofill
+    * Privacy -> Content Settings -> Plugins -> Let me choose when to run plugin content
+    * Privacy -> Content Settings -> Cookies -> Block third-party cookies and site data
+1. LastPass binary plugin: https://lastpass.com/misc_download2.php
+1. IntelliJ: https://www.jetbrains.com/idea/download/
+1. DataGrip: https://www.jetbrains.com/datagrip/download/
+1. Docker: https://docs.docker.com/engine/installation/mac/ 
 1. Total Spaces
 
 ### Testing
