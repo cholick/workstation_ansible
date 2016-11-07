@@ -2,12 +2,12 @@
 
 - hosts: all
   roles:
+    - alfred
+    - dns
     - util
     - dot_files
     - jvm
-    - zsh
     - osx
     - sublime
-    - alfred
-    - dns
     - vagrant
+    - zsh

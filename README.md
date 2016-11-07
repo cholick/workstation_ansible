@@ -22,6 +22,13 @@
 ansible-playbook --ask-become-pass workstation.yml -i inventory_local
 ```
 
+### Cleanup
+
+1. Sublime
+  * Start & wait for restart prompt (package control sets up in background)
+  * Enter license
+1. Reboot to pickup config writes
+
 ### Manual
 1. Register Alfred & setup sync folder (~/Dropbox/integration/alfred)
 1. Chrome: https://www.google.com/chrome/browser/desktop/index.html
@@ -33,18 +40,16 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
 1. DataGrip: https://www.jetbrains.com/datagrip/download/
 1. Docker: https://docs.docker.com/engine/installation/mac/ 
 1. Total Spaces
+1. Veracrypt
+1. Keybase.io
+1. Provision Github Personal Access Token: https://github.com/settings/tokens
 
 ### Testing
 
 Setting up an OSX vm
 * https://blog.frd.mn/install-os-x-10-10-yosemite-in-virtualbox/
 
-### Cleanup
-
-1. Sublime
-  * Start & wait for restart prompt (package control sets up in background)
-  * Enter license
-1. Reboot to pickup config writes
+Fusion is much easier: the app has a config option for creating a vm from OSX boot image.
 
 ### Notes
 
