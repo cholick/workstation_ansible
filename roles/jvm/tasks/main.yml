@@ -1,7 +1,8 @@
 ---
 
 - name: Install sdkman
-  script: get.sdkman.io.sh
+  # From get.sdkman.io
+  script: sdkman.sh
 
 - name: Install Java
   homebrew_cask:
