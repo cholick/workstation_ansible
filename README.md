@@ -37,6 +37,14 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
     * Privacy -> Content Settings -> Cookies -> Block third-party cookies and site data
 1. LastPass binary plugin: https://lastpass.com/misc_download2.php
 1. IntelliJ: https://www.jetbrains.com/idea/download/
+    * .ignore
+    * BashSupport
+    * Docker integration
+    * Go
+    * HCL language support
+    * Ini4Idea
+    * Markdown support
+    * Python
 1. DataGrip: https://www.jetbrains.com/datagrip/download/
 1. Docker: https://docs.docker.com/engine/installation/mac/ 
 1. Total Spaces
