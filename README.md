@@ -41,10 +41,13 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
     * BashSupport
     * Docker integration
     * Go
+    * Handlebards/Mustache
     * HCL language support
-    * Ini4Idea
+    * Ini4Idea (with “inventory” configured to ini)
     * Markdown support
+    * NodeJS
     * Python
+    * Spock Framework Enhancements
 1. DataGrip: https://www.jetbrains.com/datagrip/download/
 1. Docker: https://docs.docker.com/engine/installation/mac/ 
 1. Total Spaces
