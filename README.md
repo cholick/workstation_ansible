@@ -51,6 +51,9 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
 1. Veracrypt
 1. Keybase.io
 1. Provision Github Personal Access Token: https://github.com/settings/tokens
+1. Divvy
+1. The Unarchiver
+1. DasiyDisk
 
 ### Testing
 
