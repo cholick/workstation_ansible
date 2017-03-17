@@ -34,6 +34,8 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_EXPIRE_DUPS_FIRST
 
+unsetopt correct
+
 # Functions
 alias serve_dir='python -m SimpleHTTPServer'
 
