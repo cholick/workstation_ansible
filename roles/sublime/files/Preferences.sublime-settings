@@ -10,5 +10,6 @@
 	[
 		"Vintage"
 	],
-	"tab_size": 4
+	"tab_size": 4,
+	"spell_check": false
 }
