@@ -67,6 +67,9 @@ Setting up an OSX vm
 
 Fusion is much easier: the app has a config option for creating a vm from OSX boot image.
 
+### Todo
+- [ ] Sublime text v3 release flips to ugly, flat theme. Add Install of [Theme - Legacy](https://packagecontrol.io/packages/Theme%20-%20Legacy) package
+
 ### Notes
 
 When the cows are too noisy:
