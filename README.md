@@ -69,6 +69,7 @@ Fusion is much easier: the app has a config option for creating a vm from OSX bo
 
 ### Todo
 - [ ] Sublime text v3 release flips to ugly, flat theme. Add Install of [Theme - Legacy](https://packagecontrol.io/packages/Theme%20-%20Legacy) package
+- [ ] k8s tools (minikube, helm, etc)
 
 ### Notes
 
