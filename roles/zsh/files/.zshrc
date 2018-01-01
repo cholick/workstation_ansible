@@ -14,7 +14,7 @@ alias -g ......='../../../../..'
 
 alias rm='nocorrect rm'
 
-alias dnsmasq_restart="sudo launchctl stop homebrew.mxcl.dnsmasq && sudo launchctl start homebrew.mxcl.dnsmasq"
+alias dnsmasq-restart="sudo launchctl stop homebrew.mxcl.dnsmasq && sudo launchctl start homebrew.mxcl.dnsmasq"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # Configure zsh plugins
