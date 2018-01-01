@@ -44,7 +44,7 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
       - Go
       - Handlebards/Mustache
       - HCL language support
-      - Ini4Idea (with “inventory” configured to ini)
+      - Ini4Idea (with "inventory" configured to ini for Ansible)
       - Markdown support
       - NodeJS
       - Python
