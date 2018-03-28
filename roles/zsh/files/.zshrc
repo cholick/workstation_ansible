@@ -73,6 +73,7 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 export PATH=$PATH:~/Applications/homebrew/bin
+# export PATH=~/Applications/homebrew/opt/openssl/bin/openssl:$PATH
 export PATH=$PATH:~/Applications
 
 # *vm
