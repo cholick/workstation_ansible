@@ -54,6 +54,10 @@ killport() {
 	fi
 }
 
+fix_terminal_header() {
+	printf '\e]0;\a'
+}
+
 function setjdk() { if [ $# -ne 0 ];then export JAVA_HOME=`/usr/libexec/java_home -v $@`; fi; java -version; }
 function lsjdk() { ls -1 /System/Library/Java/JavaVirtualMachines/; ls -1 /Library/Java/JavaVirtualMachines/;  }
 
