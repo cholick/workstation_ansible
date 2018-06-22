@@ -1,4 +1,9 @@
 {
+	"added_words":
+	[
+		"Cholick",
+		"kubernetes"
+	],
 	"color_scheme": "Packages/User/NetBeans.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Menlo",
@@ -11,5 +16,6 @@
 		"Vintage"
 	],
 	"tab_size": 4,
-	"spell_check": false
+	"spell_check": false,
+	"theme": "Legacy.sublime-theme"
 }
