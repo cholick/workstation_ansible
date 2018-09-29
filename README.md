@@ -32,9 +32,11 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
 ### Manual
 1. Register Alfred & setup sync folder (~/Dropbox/integration/alfred)
 1. Chrome: https://www.google.com/chrome/browser/desktop/index.html
-    * Advanced sync settings -> Disable open tabs, history, autofill
+    * Advanced sync settings -> Disable Open Tabs, Passwords, Payment methods
     * Privacy -> Content Settings -> Plugins -> Let me choose when to run plugin content
     * Privacy -> Content Settings -> Cookies -> Block third-party cookies and site data
+    * chrome://flags/#top-chrome-md -> Normal
+    * chrome://flags/#omnibox-ui-hide-steady-state-url-scheme-and-subdomains -> Disabled
 1. LastPass binary plugin: https://lastpass.com/misc_download2.php
 1. IntelliJ: https://www.jetbrains.com/idea/download/
     * Plugins:
