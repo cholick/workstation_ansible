@@ -13,7 +13,7 @@ alias -g .....='../../../..'
 alias -g ......='../../../../..'
 
 alias rm='nocorrect rm'
-
+alias 🐱='cat'
 alias dnsmasq-restart="sudo launchctl stop homebrew.mxcl.dnsmasq && sudo launchctl start homebrew.mxcl.dnsmasq"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
