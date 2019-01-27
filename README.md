@@ -62,6 +62,8 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
 1. Divvy
 1. The Unarchiver
 1. DasiyDisk
+1. Mojave: Fix subpixel antialiasing (for external monitors)
+    * `defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE`
 
 ### Testing
 
