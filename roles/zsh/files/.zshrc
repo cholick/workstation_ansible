@@ -37,6 +37,9 @@ setopt HIST_EXPIRE_DUPS_FIRST
 
 unsetopt correct
 
+# kubectl.docker messes up my "kub↹" completion 
+zstyle ':completion:*' ignored-patterns 'kubectl.docker'
+
 # Functions
 alias serve_dir='python -m SimpleHTTPServer'
 
