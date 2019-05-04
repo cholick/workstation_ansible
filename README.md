@@ -64,6 +64,8 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
 1. DasiyDisk
 1. Mojave: Fix subpixel antialiasing (for external monitors)
     * `defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE`
+1. Mojave: Uncheck System Preferences -> Keyboard -> Shortcuts -> Services -> Search man Page Index...
+    * It's set to ⇧⌘A, which conflicts with JetBrains tooling's "Find Action"
 
 ### Testing
 
