@@ -62,10 +62,11 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
 1. Divvy
 1. The Unarchiver
 1. DasiyDisk
-1. Mojave: Fix subpixel antialiasing (for external monitors)
+1. Mojave: Fix [subpixel antialiasing](https://www.cleverfiles.com/help/mac-fonts-text-blurry.html) (for external monitors)
     * `defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE`
 1. Mojave: Uncheck System Preferences -> Keyboard -> Shortcuts -> Services -> Search man Page Index...
     * It's set to ⇧⌘A, which conflicts with JetBrains tooling's "Find Action"
+1. Hotkeys (manaul now, )
 
 ### Testing
 
@@ -79,6 +80,10 @@ Fusion is much easier: the app has a config option for creating a vm from OSX bo
 - [ ] k8s tools (minikube, helm, etc)
 
 ### Notes
+
+##### Alred
+* https://github.com/willfarrell/alfred-encode-decode-workflow
+* https://github.com/willfarrell/alfred-hash-workflow
 
 When the cows are too noisy:
 ```

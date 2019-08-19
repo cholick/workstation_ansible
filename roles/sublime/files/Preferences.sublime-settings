@@ -15,6 +15,7 @@
 	[
 		"Vintage"
 	],
+	"open_files_in_new_window": false,
 	"tab_size": 4,
 	"spell_check": false,
 	"theme": "Legacy.sublime-theme"

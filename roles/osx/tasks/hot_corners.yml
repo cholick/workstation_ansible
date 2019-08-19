@@ -25,10 +25,3 @@
     key: wvous-bl-corner
     type: int
     value: 10
-
-- name: Lower right to show desktop
-  osx_defaults:
-    domain: com.apple.dock
-    key: wvous-br-corner
-    type: int
-    value: 4
