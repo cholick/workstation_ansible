@@ -66,7 +66,7 @@ function lsjdk() { ls -1 /System/Library/Java/JavaVirtualMachines/; ls -1 /Libra
 
 # Configurations
 
-export EDITOR=emacs
+export EDITOR=vim
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 export _JAVA_OPTIONS="-Xmx2g"
