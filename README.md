@@ -53,6 +53,7 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
       - Spock Framework Enhancements
     * Registry -> uncheck "ide.find.as.popup"
     * Preferences -> Editor -> Generator -> Uncheck "Enable Drag'n'Drop" (I never have issues, but people I'm pairing with seem to)
+    * Appearance and Behavior -> Appearance -> Disable "Smooth scrolling"
 1. DataGrip: https://www.jetbrains.com/datagrip/download/
 1. Docker: https://docs.docker.com/engine/installation/mac/ 
 1. Total Spaces
