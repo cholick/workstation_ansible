@@ -41,17 +41,16 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
 1. IntelliJ: https://www.jetbrains.com/idea/download/
     * Plugins:
       - .ignore
-      - BashSupport
       - Docker integration
       - Go
       - Handlebards/Mustache
       - HCL language support
       - Ini4Idea (with "inventory" configured to ini for Ansible)
       - Markdown support
-      - NodeJS
       - Python
       - Spock Framework Enhancements
     * Registry -> uncheck "ide.find.as.popup"
+    * Version Control -> Confirmation -> uncheck "Restore workspaceo on branch switching"
     * Preferences -> Editor -> Generator -> Uncheck "Enable Drag'n'Drop" (I never have issues, but people I'm pairing with seem to)
     * Appearance and Behavior -> Appearance -> Disable "Smooth scrolling"
 1. DataGrip: https://www.jetbrains.com/datagrip/download/
