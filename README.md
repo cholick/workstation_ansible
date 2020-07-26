@@ -48,11 +48,16 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
       - Ini4Idea (with "inventory" configured to ini for Ansible)
       - Markdown support
       - Python
-      - Spock Framework Enhancements
     * Registry -> uncheck "ide.find.as.popup"
     * Version Control -> Confirmation -> uncheck "Restore workspaceo on branch switching"
-    * Preferences -> Editor -> Generator -> Uncheck "Enable Drag'n'Drop" (I never have issues, but people I'm pairing with seem to)
-    * Appearance and Behavior -> Appearance -> Disable "Smooth scrolling"
+    * Appearance and Behavior -> Appearance
+      - Disable "Smooth scrolling"
+      - Theme -> macOS Light
+      - Use Custom Font -> Lucida Grande
+    * Editor
+      - General -> Uncheck "Enable Drag'n'Drop" (I never have issues, but people I'm pairing with seem to)
+      - Color Scheme -> Classic Light
+    * Editor -> Font -> Menlo, 12, 1.0 line spacing
 1. DataGrip: https://www.jetbrains.com/datagrip/download/
 1. Docker: https://docs.docker.com/engine/installation/mac/ 
 1. Total Spaces
