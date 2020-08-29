@@ -57,7 +57,7 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
     * Editor
       - General -> Uncheck "Enable Drag'n'Drop" (I never have issues, but people I'm pairing with seem to)
       - Color Scheme -> Classic Light
-    * Editor -> Font -> Menlo, 12, 1.0 line spacing
+    * Editor -> Font -> Menlo, 12, 1.1 line spacing
 1. DataGrip: https://www.jetbrains.com/datagrip/download/
 1. Docker: https://docs.docker.com/engine/installation/mac/ 
 1. Total Spaces
