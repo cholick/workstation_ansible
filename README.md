@@ -56,6 +56,7 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
       - Use Custom Font -> Lucida Grande
     * Editor
       - General -> Uncheck "Enable Drag'n'Drop" (I never have issues, but people I'm pairing with seem to)
+      - General -> Code Folding -> Fold by default -> Go -> Uncheck all
       - Color Scheme -> Classic Light
     * Editor -> Font -> Menlo, 12, 1.1 line spacing
 1. DataGrip: https://www.jetbrains.com/datagrip/download/
