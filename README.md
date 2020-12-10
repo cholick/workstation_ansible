@@ -70,7 +70,9 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
 1. DasiyDisk
 1. Mojave: Fix [subpixel antialiasing](https://www.cleverfiles.com/help/mac-fonts-text-blurry.html) (for external monitors)
     * `defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE`
-1. Mojave: Uncheck System Preferences -> Keyboard -> Shortcuts -> Services -> Search man Page Index...
+1. Remove conflicting OS shortcuts: Keyboard -> Shortcuts
+    * Services -> Search man Page Index...
+    * App Shortcuts -> Show Help menu
     * It's set to ⇧⌘A, which conflicts with JetBrains tooling's "Find Action"
 1. Hotkeys (manaul now, )
 
