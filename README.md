@@ -31,6 +31,7 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
 
 ### Manual
 1. Register Alfred & setup sync folder (~/Dropbox/integration/alfred)
+   * Alfred Preferences -> Features -> File Search -> Navigation: Clear `Previous Path` shortcut
 1. Chrome: https://www.google.com/chrome/browser/desktop/index.html
     * Advanced sync settings -> Disable Open Tabs, Passwords, Payment methods
     * Privacy -> Content Settings -> Plugins -> Let me choose when to run plugin content
