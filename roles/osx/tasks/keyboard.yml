@@ -1,13 +1,13 @@
 ---
 
-- name: Key repeat to 30ms
+- name: Key repeat reduced
   osx_defaults:
     domain: NSGlobalDomain
     key: KeyRepeat
     type: int
     value: 2
 
-- name: Key repeat delay to 375ms
+- name: Key repeat delay reduce
   osx_defaults:
     domain: NSGlobalDomain
     key: InitialKeyRepeat
@@ -15,13 +15,6 @@
     value: 25
 
 - name: Disable smart dash sub
-  osx_defaults:
-    domain: NSGlobalDomain
-    key: NSAutomaticDashSubstitutionEnabled
-    type: bool
-    value: false
-
-- name: Disable smart quote sub
   osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticDashSubstitutionEnabled

@@ -73,16 +73,12 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export _JAVA_OPTIONS="-Xmx2g"
 
 export PATH=/usr/local/bin:$HOME/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin
-export PATH=$PATH:$HOME/Applications/brew/bin
+export PATH=$HOME/Applications/brew/bin:$PATH
 export PATH=$PATH:$HOME/Applications
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
-
-export PATH=$PATH:~/Applications/homebrew/bin
-# export PATH=~/Applications/homebrew/opt/openssl/bin/openssl:$PATH
-export PATH=$PATH:~/Applications
 
 # *vm
 

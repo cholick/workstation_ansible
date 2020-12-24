@@ -32,25 +32,18 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
 ### Manual
 1. Register Alfred & setup sync folder (~/Dropbox/integration/alfred)
    * Alfred Preferences -> Features -> File Search -> Navigation: Clear `Previous Path` shortcut
-1. Chrome: https://www.google.com/chrome/browser/desktop/index.html
-    * Advanced sync settings -> Disable Open Tabs, Passwords, Payment methods
-    * Privacy -> Content Settings -> Plugins -> Let me choose when to run plugin content
-    * Privacy -> Content Settings -> Cookies -> Block third-party cookies and site data
-    * chrome://flags/#top-chrome-md -> Normal
-    * chrome://flags/#omnibox-ui-hide-steady-state-url-scheme-and-subdomains -> Disabled
+1. Chrome: login & sync settings (customize to exclude Open Tabs, Passwords, and Payment Methods)
 1. LastPass binary plugin: https://lastpass.com/misc_download2.php
-1. IntelliJ: https://www.jetbrains.com/idea/download/
+1. GoLand & PyCharm: https://www.jetbrains.com/products/
     * Plugins:
       - .ignore
       - Docker integration
       - Go
-      - Handlebards/Mustache
       - HCL language support
-      - Ini4Idea (with "inventory" configured to ini for Ansible)
       - Markdown support
-      - Python
+      - Python (for Goland)
     * Registry -> uncheck "ide.find.as.popup"
-    * Version Control -> Confirmation -> uncheck "Restore workspaceo on branch switching"
+    * Version Control -> Confirmation -> uncheck "Restore workspace on branch switching"
     * Appearance and Behavior -> Appearance
       - Disable "Smooth scrolling"
       - Theme -> macOS Light
@@ -61,21 +54,50 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
       - Color Scheme -> Classic Light
     * Editor -> Font -> Menlo, 12, 1.1 line spacing
 1. DataGrip: https://www.jetbrains.com/datagrip/download/
-1. Docker: https://docs.docker.com/engine/installation/mac/ 
-1. Total Spaces
+1. Docker: https://hub.docker.com/editions/community/docker-ce-desktop-mac/
 1. Veracrypt
-1. Keybase.io
 1. Provision Github Personal Access Token: https://github.com/settings/tokens
-1. Divvy
-1. The Unarchiver
-1. DasiyDisk
+1. App Store re-install
+   * Affinity Photo
+   * DaisyDisk
+   * Pommie
+   * Revisions for Dropbox
+   * Webcam Settings
 1. Mojave: Fix [subpixel antialiasing](https://www.cleverfiles.com/help/mac-fonts-text-blurry.html) (for external monitors)
-    * `defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE`
+   * `defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE`
 1. Remove conflicting OS shortcuts: Keyboard -> Shortcuts
-    * Services -> Search man Page Index...
-    * App Shortcuts -> Show Help menu
-    * It's set to ⇧⌘A, which conflicts with JetBrains tooling's "Find Action"
-1. Hotkeys (manaul now, )
+   * Services -> Text -> Search man Page Index... (It's set to ⇧⌘A, which conflicts with JetBrains tooling's "Find Action")
+   * App Shortcuts -> Show Help menu
+1. Hotkeys
+   * Mission Control
+      * Mission Control: F8
+      * Move left a space: ⌃←
+      * Move right a space: ⌃→
+
+### Replacement for OSX Role
+Not actually running Ansible, this playbook has decayed too much over time. Replacement scirpt for the OSX role
+
+```shell
+defaults write -g KeyRepeat -int 2
+defaults write -g InitialKeyRepeat -int 25
+defaults write -g NSAutomaticDashSubstitutionEnabled -bool false
+
+defaults write -g AppleShowScrollBars -string "Always"
+
+defaults write -g com.apple.swipescrolldirection -bool false
+
+defaults write -g AppleShowAllExtensions -bool true
+# Default to list view in finder windows
+defaults write com.apple.finder FXPreferredViewStyle -string Nlsv
+
+# Setup hot-corners
+defaults write com.apple.dock wvous-tl-corner -int 6
+defaults write com.apple.dock wvous-bl-corner -int 10
+defaults write com.apple.dock wvous-tr-corner -int 4
+
+# Don't re-arrange spaces based on LRU
+defaults write com.apple.dock mru-spaces -bool false
+```
 
 ### Testing
 
