@@ -1,4 +1,4 @@
-### Outdated
+### Outdated - Don't Actually Run This
 
 This playbook has decayed too much over time; definitely don't use it. It does still have current & relevant settings, but setting up a new machine just happens too seldom to keep the automation alive and tested. I do still perform manual setup based on the files in this repo though.
 
