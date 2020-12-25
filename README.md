@@ -1,3 +1,6 @@
+### Outdated
+
+This playbook has decayed too much over time; definitely don't use it. It does still have current & relevant settings, but setting up a new machine just happens too seldom to keep the automation alive and tested. I do still perform manual setup based on the files in this repo though.
 
 ### Bootstrap
 
@@ -75,7 +78,7 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
       * Move right a space: ⌃→
 
 ### Replacement for OSX Role
-Not actually running Ansible, this playbook has decayed too much over time. Replacement scirpt for the OSX role
+Replacement scirpt for the OSX role
 
 ```shell
 defaults write -g KeyRepeat -int 2
