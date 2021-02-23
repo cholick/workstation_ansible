@@ -76,8 +76,8 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
 1. Hotkeys
    * Mission Control
       * Mission Control: F8
-      * Move left a space: ⌃←
-      * Move right a space: ⌃→
+      * Move left a space: ⌃⌘←
+      * Move right a space: ⌃⌘→
 
 ### Replacement for OSX Role
 Replacement scirpt for the OSX role
