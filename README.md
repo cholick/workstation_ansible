@@ -45,7 +45,6 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
       - HCL language support
       - Markdown support
       - Python (for Goland)
-    * Registry -> uncheck "ide.find.as.popup"
     * Version Control -> Confirmation -> uncheck "Restore workspace on branch switching"
     * Appearance and Behavior -> Appearance
       - Disable "Smooth scrolling"
