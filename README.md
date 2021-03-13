@@ -35,6 +35,7 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
 ### Manual
 1. Register Alfred & setup sync folder (~/Dropbox/integration/alfred)
    * Alfred Preferences -> Features -> File Search -> Navigation: Clear `Previous Path` shortcut
+   * Alfred Preferences -> Features -> Clipboard History -> Keep plain Text (24 hours)
 1. Chrome: login & sync settings (customize to exclude Open Tabs, Passwords, and Payment Methods)
 1. LastPass binary plugin: https://lastpass.com/misc_download2.php
 1. GoLand & PyCharm: https://www.jetbrains.com/products/
