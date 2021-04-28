@@ -64,6 +64,7 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
    * Set Homebrew as default profile
    * Keyboard -> Check "Use Option as Meta key"
    * Advanced -> Disable "Allow VT100 application keypad mode" (so [numpad "enter" works in terminal](https://vi.stackexchange.com/questions/11581/why-doesnt-my-numpad-work-right-in-my-terminal))
+   * Font: 14pt Menlo
 3. Veracrypt
 4. Provision Github Personal Access Token: https://github.com/settings/tokens
 5. App Store re-install
