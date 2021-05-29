@@ -70,6 +70,7 @@ function lsjdk() { ls -1 /System/Library/Java/JavaVirtualMachines/; ls -1 /Libra
 
 # Configurations
 
+export DOCKER_SCAN_SUGGEST=false
 export EDITOR=vim
 
 export JAVA_HOME=$(/usr/libexec/java_home)
