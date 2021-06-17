@@ -55,6 +55,7 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
       - General -> Uncheck "Enable Drag'n'Drop" (I never have issues, but people I'm pairing with seem to)
       - General -> Code Folding -> Fold by default -> Go -> Uncheck all
       - General -> Code Folding -> XML -> Uncheck "XML Entities"
+      - General -> Smart Keys -> Ruby -> Uncheck "Continue comments on Enter"
       - Color Scheme -> Classic Light
       - Inlay Hints -> Disable all
     * Editor -> Font -> Menlo, 12, 1.1 line spacing
