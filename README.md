@@ -76,6 +76,7 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
    * Webcam Settings
 6. Mojave: Fix [subpixel antialiasing](https://www.cleverfiles.com/help/mac-fonts-text-blurry.html) (for external monitors)
    * `defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE`
+   * `defaults -currentHost write -globalDomain AppleFontSmoothing -int 2`
 7. Remove conflicting OS shortcuts: Keyboard -> Shortcuts
    * Services -> Text -> Search man Page Index... (It's set to ⇧⌘A, which conflicts with JetBrains tooling's "Find Action")
    * App Shortcuts -> Show Help menu
