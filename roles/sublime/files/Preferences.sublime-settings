@@ -5,7 +5,10 @@
 		"kubernetes"
 	],
 	"color_scheme": "Packages/User/NetBeans.tmTheme",
+	"theme": "Default.sublime-theme",
+	"file_tab_style": "angled",
 	"ensure_newline_at_eof_on_save": true,
+	"open_files_in_new_window": false,
 	"font_face": "Menlo",
 	// Normal
 	"font_size": 12,
@@ -15,8 +18,6 @@
 	[
 		"Vintage"
 	],
-	"open_files_in_new_window": false,
-	"tab_size": 4,
+
 	"spell_check": false,
-	"theme": "Legacy.sublime-theme"
 }
