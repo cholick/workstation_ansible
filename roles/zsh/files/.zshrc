@@ -84,13 +84,14 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
-# *vm
+export DOCKER_SCAN_SUGGEST=false
 
+# *vm
 export NVM_DIR="$HOME/.nvm"
 function nvm {
     unset -f nvm
 	echo "Loading nvm"
-	. "/Users/mc/Applications/brew/opt/nvm/nvm.sh"
+	. "/Users/$HOME/Applications/brew/opt/nvm/nvm.sh"
 	nvm $@
 }
 
