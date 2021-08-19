@@ -111,6 +111,12 @@ defaults write com.apple.dock wvous-tr-corner -int 4
 defaults write com.apple.dock mru-spaces -bool false
 ```
 
+### Additional scripting
+
+```
+git config --global init.defaultBranch main
+```
+
 ### Testing
 
 Setting up an OSX vm
