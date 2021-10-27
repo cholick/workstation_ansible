@@ -45,7 +45,7 @@ zstyle ':completion:*' ignored-patterns 'kubectl.docker|kinit'
 function _parameters() {}
 
 # Functions
-alias serve_dir='python -m SimpleHTTPServer'
+alias serve_dir='python3 -m http.server'
 
 killport() {
 	if [ -z $1 ]; then
