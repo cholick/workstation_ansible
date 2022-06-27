@@ -20,4 +20,5 @@
 	],
 
 	"spell_check": false,
+	"mde.auto_increment_ordered_list_number": false,
 }
