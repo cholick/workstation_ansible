@@ -115,6 +115,7 @@ defaults write com.apple.dock mru-spaces -bool false
 
 ```
 git config --global init.defaultBranch main
+git config --global push.autoSetupRemote true
 ```
 
 ### Testing
