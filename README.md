@@ -61,6 +61,7 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
     * Editor -> Font -> Menlo, 12, 1.1 line spacing
 1. DataGrip: https://www.jetbrains.com/datagrip/download/
 1. Docker: https://hub.docker.com/editions/community/docker-ce-desktop-mac/
+1. https://github.com/Itaybre/CameraController
 1. Terminal
    * Set Homebrew as default profile
    * Keyboard -> Check "Use Option as Meta key"
