@@ -100,6 +100,7 @@ defaults write -g NSAutomaticDashSubstitutionEnabled -bool false
 defaults write -g AppleShowScrollBars -string "Always"
 
 defaults write -g com.apple.swipescrolldirection -bool false
+defaults write -g NSScrollAnimationEnabled -bool false
 
 defaults write -g AppleShowAllExtensions -bool true
 # Default to list view in finder windows
