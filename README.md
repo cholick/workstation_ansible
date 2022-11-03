@@ -91,6 +91,7 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
 Replacement scirpt for the OSX role
 
 Accessibility -> Display -> Menu bar size: Large
+Accessibility -> Display -> Show window title icons
 
 ```shell
 defaults write -g KeyRepeat -int 2
