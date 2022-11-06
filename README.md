@@ -93,6 +93,7 @@ Replacement scirpt for the OSX role
 * Accessibility -> Display -> Menu bar size: Large
 * Accessibility -> Display -> Show window title icons
 * Finder -> Prferences -> Advanced -> Keep folders on top (both options)
+* Finder -> View -> Show Path Bar
 
 ```shell
 defaults write -g KeyRepeat -int 2
