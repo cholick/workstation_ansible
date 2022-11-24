@@ -94,6 +94,7 @@ Replacement scirpt for the OSX role
 * Accessibility -> Display -> Show window title icons
 * Finder -> Prferences -> Advanced -> Keep folders on top (both options)
 * Finder -> View -> Show Path Bar
+* Displays -> Universal Control -> Disable "Push throw edge" and "Automatically reconnect"
 
 ```shell
 defaults write -g KeyRepeat -int 2
