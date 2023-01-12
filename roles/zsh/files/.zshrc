@@ -39,7 +39,7 @@ setopt HIST_EXPIRE_DUPS_FIRST
 unsetopt correct
 
 # kubectl.docker messes up my "kub↹" completion 
-zstyle ':completion:*' ignored-patterns 'kubectl.docker|kinit'
+zstyle ':completion:*' ignored-patterns 'kubectl.docker|kinit|kubelogin|kustomize*'
 
 # https://serverfault.com/questions/353270/excluding-environment-variables-from-zsh-autocomplete
 function _parameters() {}
