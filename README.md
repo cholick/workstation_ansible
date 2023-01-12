@@ -47,6 +47,7 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
       - Markdown support
       - Python (for Goland)
     * Version Control -> Confirmation -> uncheck "Restore workspace on branch switching"
+    * Version Control -> Commmit -> check "Clear initial commit message"
     * Appearance and Behavior -> Appearance
       - Disable "Smooth scrolling"
       - Theme -> macOS Light
