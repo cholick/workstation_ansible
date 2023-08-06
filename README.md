@@ -125,6 +125,9 @@ defaults write com.apple.dock mru-spaces -bool false
 ```
 git config --global init.defaultBranch main
 git config --global push.autoSetupRemote true
+
+conda config --set env_prompt '({name}) '
+conda config --set auto_activate_base False
 ```
 
 ### Testing
