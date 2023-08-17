@@ -84,8 +84,6 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
-export DOCKER_SCAN_SUGGEST=false
-
 # *vm
 export NVM_DIR="$HOME/.nvm"
 function nvm {
