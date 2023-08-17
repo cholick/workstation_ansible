@@ -1,0 +1,61 @@
+{
+    "workbench.colorTheme": "Default Light+",
+    "editor.fontFamily": "Menlo",
+    // https://github.com/Microsoft/vscode/issues/32098
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "keyword",
+                "settings": {
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "storage",
+                "settings": {
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "constant.language",
+                "settings": {
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "support.class.builtin",
+                "settings": {
+                    "fontStyle": "bold"
+                }
+            }
+        ]
+    },
+    "workbench.tree.indent": 18,
+    "git.autofetch": true,
+    "editor.inlineSuggest.enabled": true,
+    "terminal.integrated.macOptionIsMeta": true,
+    "github.copilot.enable": {
+        "*": false,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false
+    },
+    "githubPullRequests.pullBranch": "never",
+    "workbench.startupEditor": "none",
+    "search.useIgnoreFiles": false,
+    "terminal.integrated.scrollback": 10000,
+    "workbench.editor.wrapTabs": true,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "githubPullRequests.commentExpandState": "collapseAll",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "github.codespaces.defaultExtensions": [
+        "GitHub.codespaces",
+        "GitHub.vscode-pull-request-github"
+    ],
+    "github-enterprise.uri": "https://github.ghe.com",
+    "json.schemas": [],
+    "terminal.integrated.automationProfile.linux": {},
+    "comments.visible": false
+}
