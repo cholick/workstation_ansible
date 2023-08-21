@@ -69,7 +69,7 @@ function setjdk() { if [ $# -ne 0 ];then export JAVA_HOME=`/usr/libexec/java_hom
 function lsjdk() { ls -1 /System/Library/Java/JavaVirtualMachines/; ls -1 /Library/Java/JavaVirtualMachines/;  }
 
 # Configurations
-
+export DOCKER_CLI_HINTS=false
 export DOCKER_SCAN_SUGGEST=false
 export EDITOR=vim
 
