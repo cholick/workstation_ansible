@@ -68,21 +68,23 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
    * Keyboard -> Check "Use Option as Meta key"
    * Advanced -> Disable "Allow VT100 application keypad mode" (so [numpad "enter" works in terminal](https://vi.stackexchange.com/questions/11581/why-doesnt-my-numpad-work-right-in-my-terminal))
    * Font: 14pt Menlo
-3. Veracrypt
-4. Provision Github Personal Access Token: https://github.com/settings/tokens
-5. App Store re-install
+1. Veracrypt
+1. Provision Github Personal Access Token: https://github.com/settings/tokens
+1. App Store re-install
    * Affinity Photo
    * DaisyDisk
    * Pommie
    * Revisions for Dropbox
    * Webcam Settings
-6. Mojave: Fix [subpixel antialiasing](https://www.cleverfiles.com/help/mac-fonts-text-blurry.html) (for external monitors)
+1. Sonoma
+   * Desktop & Dock -> Desktop & Stage Manager -> Click wallpaper to reveal desktop -> Only in Stage anager
+1. Mojave: Fix [subpixel antialiasing](https://www.cleverfiles.com/help/mac-fonts-text-blurry.html) (for external monitors)
    * `defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE`
    * `defaults -currentHost write -globalDomain AppleFontSmoothing -int 2`
-7. Remove conflicting OS shortcuts: Keyboard -> Shortcuts
+1. Remove conflicting OS shortcuts: Keyboard -> Shortcuts
    * Services -> Text -> Search man Page Index... (It's set to ⇧⌘A, which conflicts with JetBrains tooling's "Find Action")
    * App Shortcuts -> Show Help menu
-8. Hotkeys
+1. Hotkeys
    * Mission Control
       * Mission Control: F8
       * Move left a space: ⌃⌘←
