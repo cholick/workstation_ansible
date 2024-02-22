@@ -90,6 +90,7 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
       * Mission Control: F8
       * Move left a space: ⌃⌘←
       * Move right a space: ⌃⌘→
+1. Settings -> Notifications -> Allow when mirror/sharing
 
 ### Replacement for OSX Role
 Replacement scirpt for the OSX role
