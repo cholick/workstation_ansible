@@ -61,9 +61,15 @@ killport() {
 	fi
 }
 
-fix_terminal_header() {
+fix-terminal-header() {
 	printf '\e]0;\a'
 }
+
+# https://forums.macrumors.com/threads/time-synchronization-command-line-in-macos-big-sur.2279396/page-2
+fix-time() {
+	sudo pkill timed
+}
+
 
 function setjdk() { if [ $# -ne 0 ];then export JAVA_HOME=`/usr/libexec/java_home -v $@`; fi; java -version; }
 function lsjdk() { ls -1 /System/Library/Java/JavaVirtualMachines/; ls -1 /Library/Java/JavaVirtualMachines/;  }
