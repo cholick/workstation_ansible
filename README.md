@@ -95,6 +95,7 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
 ### Replacement for OSX Role
 Replacement scirpt for the OSX role
 
+* Displays -> Advanced -> Disable "Allow pointer nearby Mac or iPad"
 * Accessibility -> Display -> Menu bar size: Large
 * Accessibility -> Display -> Show window title icons
 * Finder -> Prferences -> Advanced -> Keep folders on top (both options)
