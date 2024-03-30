@@ -63,44 +63,61 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
 1. DataGrip: https://www.jetbrains.com/datagrip/download/
 1. Docker: https://hub.docker.com/editions/community/docker-ce-desktop-mac/
 1. https://github.com/Itaybre/CameraController
-1. Terminal
-   * Set Homebrew as default profile
-   * Keyboard -> Check "Use Option as Meta key"
-   * Advanced -> Disable "Allow VT100 application keypad mode" (so [numpad "enter" works in terminal](https://vi.stackexchange.com/questions/11581/why-doesnt-my-numpad-work-right-in-my-terminal))
-   * Font: 14pt Menlo
 1. Zoom: disable most hotkeys, make hotkeys global
 1. Veracrypt
 1. Provision Github Personal Access Token: https://github.com/settings/tokens
-1. App Store re-install
-   * Affinity Photo
-   * DaisyDisk
-   * Pommie
-   * Revisions for Dropbox
-   * Webcam Settings
-1. Sonoma
-   * Desktop & Dock -> Desktop & Stage Manager -> Click wallpaper to reveal desktop -> Only in Stage anager
+
+### Replacement for OSX Role
+
+1. Terminal
+   * Set Homebrew as default profile
+   * Font: 14pt Menlo
+   * Keyboard -> Check "Use Option as Meta key"
+   * Advanced -> Disable "Allow VT100 application keypad mode" (so [numpad "enter" works in terminal](https://vi.stackexchange.com/questions/11581/why-doesnt-my-numpad-work-right-in-my-terminal))
+1. Finder
+   * View -> Show Path Bar
+   * View -> Show Tab Bar
+   * Prferences -> Advanced -> Keep folders on top (both options)
+   * Prferences -> Sidebar -> Show Hard disks, Hide air drop
+
+System:
 1. Mojave: Fix [subpixel antialiasing](https://www.cleverfiles.com/help/mac-fonts-text-blurry.html) (for external monitors)
    * `defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE`
    * `defaults -currentHost write -globalDomain AppleFontSmoothing -int 2`
-1. Remove conflicting OS shortcuts: Keyboard -> Shortcuts
-   * Services -> Text -> Search man Page Index... (It's set to ⇧⌘A, which conflicts with JetBrains tooling's "Find Action")
-   * App Shortcuts -> Show Help menu
-1. Hotkeys
-   * Mission Control
+1. Accessibility
+   * Display -> Menu bar size: Large
+   * Display -> Show window title icons
+   * Pointer -> Disable shake
+1. Control Center
+   * Modules -> Sound -> Always show
+   * Battery -> Show Percentage
+1. Desktop & Dock -> Desktop & Stage Manager -> Click wallpaper to reveal desktop -> Only in Stage anager
+1. Desktop & Dock -> Minmize windows using -> Scale Effect
+1. Desktop & Dock -> Hotcorners
+   * Upper left -> Disable screensaver
+   * Lower Left -> Display to sleep
+   * Lower right -> Desktop
+1. Displays -> Universal Control -> Disable "Push throw edge" and "Automatically reconnect"
+1. Keyboard -> Shortcuts
+   1. Toggle on Function keys
+   1. Remove conflicting OS shortcuts: Keyboard -> Shortcuts
+      * Services -> Text -> Search man Page Index... (It's set to ⇧⌘A, which conflicts with JetBrains tooling's "Find Action")
+      * App Shortcuts -> Show Help menu
+      * Spotlight -> Search (replaced by Alfred)
+      * Display -> Disable both (these mess with kvm switch hotkey)
+   1. Hotkeys
       * Mission Control: F8
-      * Move left a space: ⌃⌘←
-      * Move right a space: ⌃⌘→
-1. Settings -> Notifications -> Allow when mirror/sharing
+      * Mission Control
+         * Move left a space: ⌃⌘←
+         * Move right a space: ⌃⌘→
+1. Notifications -> Allow when mirror/sharing
+1. Trackpad
+   * Point and Click -> Secondary Click -> Bottom Right
+   * Point and Click -> Enable tap to click
+   * Swipe between pages -> Swith with Three Fingers
 
-### Replacement for OSX Role
 Replacement scirpt for the OSX role
 
-* Displays -> Advanced -> Disable "Allow pointer nearby Mac or iPad"
-* Accessibility -> Display -> Menu bar size: Large
-* Accessibility -> Display -> Show window title icons
-* Finder -> Prferences -> Advanced -> Keep folders on top (both options)
-* Finder -> View -> Show Path Bar
-* Displays -> Universal Control -> Disable "Push throw edge" and "Automatically reconnect"
 
 ```shell
 defaults write -g KeyRepeat -int 2
@@ -115,11 +132,6 @@ defaults write -g NSScrollAnimationEnabled -bool false
 defaults write -g AppleShowAllExtensions -bool true
 # Default to list view in finder windows
 defaults write com.apple.finder FXPreferredViewStyle -string Nlsv
-
-# Setup hot-corners
-defaults write com.apple.dock wvous-tl-corner -int 6
-defaults write com.apple.dock wvous-bl-corner -int 10
-defaults write com.apple.dock wvous-tr-corner -int 4
 
 # Don't re-arrange spaces based on LRU
 defaults write com.apple.dock mru-spaces -bool false
