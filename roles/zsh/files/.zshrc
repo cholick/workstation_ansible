@@ -21,8 +21,8 @@ alias fix-download="sudo xattr -r -d com.apple.quarantine"
 # Configure zsh plugins
 
 export HISTFILE=~/.zsh_history
-export HISTSIZE=20000
-export SAVEHIST=20000
+export HISTSIZE=40000
+export SAVEHIST=40000
 
 setopt EXTENDED_HISTORY
 setopt APPEND_HISTORY
@@ -98,13 +98,6 @@ function nvm {
 	echo "Loading nvm"
 	. "/Users/$HOME/Applications/brew/opt/nvm/nvm.sh"
 	nvm $@
-}
-
-function sdk {
-	unset -f sdk
-	echo "Loading sdkman"
-	[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" && -z $(which sdkman-init.sh | grep '/sdkman-init.sh') ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-	sdk $@
 }
 
 function pyenv {
