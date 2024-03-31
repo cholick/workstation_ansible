@@ -1,6 +1,0 @@
----
-
-- name: Install alfred
-  homebrew_cask:
-    name: alfred
-    state: present

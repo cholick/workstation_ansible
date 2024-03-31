@@ -1,0 +1,20 @@
+{
+	"added_words":
+	[
+		"Cholick",
+		"kubernetes"
+	],
+	"color_scheme": "Packages/Color Scheme - Legacy/Mac Classic.tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Menlo",
+	"font_size": 12,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"open_files_in_new_window": false,
+	"show_legacy_color_schemes": true,
+	"theme": "Default.sublime-theme",
+	"file_tab_style": "angled",
+	"index_files": true,
+}

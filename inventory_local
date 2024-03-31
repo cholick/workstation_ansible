@@ -1,2 +1,0 @@
-[workstation]
-workstation ansible_connection=local

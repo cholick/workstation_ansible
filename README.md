@@ -1,73 +1,17 @@
-### Outdated - Don't Actually Run This
+### Dotfile (Sort of)
 
-This playbook has decayed too much over time; definitely don't use it. It does still have current & relevant settings, but setting up a new machine just happens too seldom to keep the automation alive and tested. I do still perform manual setup based on the files in this repo though.
+This repo was an ansible playbook at one point, but the cost of maintaining that didn't make sense for how
+often I needed to configure a new machine (and tooling like IDE's have added things like setting sync).
 
-### Bootstrap
+It's now more of a rough set of notes, though it still includes some dotfiles (without the scripting to put them in place)
 
-1. Install [Dropbox](https://www.dropbox.com/downloading) (quick & dirty secrets solution)
-1. `xcode-select --install`
-1. Install [Homebrew](https://github.com/Homebrew/brew/blob/master/docs/Installation.md#installation)
-  * `mkdir ~/Applications; cd ~/Applications`
-  * `git clone https://github.com/Homebrew/brew/`
-  * `export PATH=$PATH:$HOME/Applications/brew/bin`
-1. Install `pyenv`
-  * `brew install pyenv`
-1. Setup `pyenv`
-  * `eval "$(pyenv init -)"`
-  * `pyenv install 2.7.12 && pyenv rehash`
-  * `pyenv shell 2.7.12`
-1. Install `ansible`
-  * `pip install ansible`
-
-### Installation
-
-```
-ansible-playbook --ask-become-pass workstation.yml -i inventory_local
-```
-
-### Cleanup
-
-1. Sublime
-  * Start & wait for restart prompt (package control sets up in background)
-  * Enter license
-1. Reboot to pickup config writes
-
-### Manual
-1. Register Alfred & setup sync folder (~/Dropbox/integration/alfred)
-   * Alfred Preferences -> Features -> File Search -> Navigation: Clear `Previous Path` shortcut
-   * Alfred Preferences -> Features -> Clipboard History -> Keep plain Text (24 hours)
+### Setup
 1. Chrome: login & sync settings (customize to exclude Open Tabs, Passwords, and Payment Methods)
-1. LastPass binary plugin: https://lastpass.com/misc_download2.php
-1. GoLand & PyCharm: https://www.jetbrains.com/products/
-    * Plugins:
-      - .ignore
-      - Docker integration
-      - Go
-      - HCL language support
-      - Markdown support
-      - Python (for Goland)
-    * Version Control -> Confirmation -> uncheck "Restore workspace on branch switching"
-    * Version Control -> Commmit -> check "Clear initial commit message"
-    * Appearance and Behavior -> Appearance
-      - Disable "Smooth scrolling"
-      - Theme -> macOS Light
-      - Use Custom Font -> Lucida Grande
-    * Editor
-      - General -> Uncheck "Enable Drag'n'Drop" (I never have issues, but people I'm pairing with seem to)
-      - General -> Code Folding -> Fold by default -> Go -> Uncheck all
-      - General -> Code Folding -> XML -> Uncheck "XML Entities"
-      - General -> Smart Keys -> Ruby -> Uncheck "Continue comments on Enter"
-      - Color Scheme -> Classic Light
-      - Inlay Hints -> Disable all
-    * Editor -> Font -> Menlo, 12, 1.1 line spacing
-1. DataGrip: https://www.jetbrains.com/datagrip/download/
-1. Docker: https://hub.docker.com/editions/community/docker-ce-desktop-mac/
-1. https://github.com/Itaybre/CameraController
+1. GoLand, PyCharm, Rubymine, Datagrip - configure settings sync
 1. Zoom: disable most hotkeys, make hotkeys global
-1. Veracrypt
-1. Provision Github Personal Access Token: https://github.com/settings/tokens
+1. Provision GitHub Personal Access Token: https://github.com/settings/tokens
 
-### Replacement for OSX Role
+### macOS Config
 
 1. Terminal
    * Set Homebrew as default profile
@@ -75,15 +19,13 @@ ansible-playbook --ask-become-pass workstation.yml -i inventory_local
    * Keyboard -> Check "Use Option as Meta key"
    * Advanced -> Disable "Allow VT100 application keypad mode" (so [numpad "enter" works in terminal](https://vi.stackexchange.com/questions/11581/why-doesnt-my-numpad-work-right-in-my-terminal))
 1. Finder
+   * General -> New Finder window -> Desktop
    * View -> Show Path Bar
    * View -> Show Tab Bar
-   * Prferences -> Advanced -> Keep folders on top (both options)
-   * Prferences -> Sidebar -> Show Hard disks, Hide air drop
+   * Preferences -> Advanced -> Keep folders on top (both options)
+   * Preferences -> Sidebar -> Show Hard disks, Hide air drop
 
 System:
-1. Mojave: Fix [subpixel antialiasing](https://www.cleverfiles.com/help/mac-fonts-text-blurry.html) (for external monitors)
-   * `defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE`
-   * `defaults -currentHost write -globalDomain AppleFontSmoothing -int 2`
 1. Accessibility
    * Display -> Menu bar size: Large
    * Display -> Show window title icons
@@ -91,8 +33,9 @@ System:
 1. Control Center
    * Modules -> Sound -> Always show
    * Battery -> Show Percentage
-1. Desktop & Dock -> Desktop & Stage Manager -> Click wallpaper to reveal desktop -> Only in Stage anager
-1. Desktop & Dock -> Minmize windows using -> Scale Effect
+1. Desktop & Dock -> Desktop & Stage Manager -> Click wallpaper to reveal desktop -> Only in Stage manager
+1. Desktop & Dock -> Minimize windows using -> Scale Effect
+1. Desktop & Dock -> Uncheck "Close windows when quitting an application"
 1. Desktop & Dock -> Hotcorners
    * Upper left -> Disable screensaver
    * Lower Left -> Display to sleep
@@ -142,21 +85,11 @@ defaults write com.apple.dock mru-spaces -bool false
 ```
 git config --global init.defaultBranch main
 git config --global push.autoSetupRemote true
+git config --global core.excludesfile ~/.gitignore_global
 
 conda config --set env_prompt '({name}) '
 conda config --set auto_activate_base False
 ```
-
-### Testing
-
-Setting up an OSX vm
-* https://blog.frd.mn/install-os-x-10-10-yosemite-in-virtualbox/
-
-Fusion is much easier: the app has a config option for creating a vm from OSX boot image.
-
-### Todo
-- [ ] Sublime text v3 release flips to ugly, flat theme. Add Install of [Theme - Legacy](https://packagecontrol.io/packages/Theme%20-%20Legacy) package
-- [ ] k8s tools (minikube, helm, etc)
 
 ### Notes
 
@@ -164,21 +97,6 @@ Fusion is much easier: the app has a config option for creating a vm from OSX bo
 * https://github.com/willfarrell/alfred-encode-decode-workflow
 * https://github.com/willfarrell/alfred-hash-workflow
 
-When the cows are too noisy:
-```
-export ANSIBLE_NOCOWS=1
-```
-
-```
- ____________
-< Goodbye :( >
- ------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-```
 
 ### References
 

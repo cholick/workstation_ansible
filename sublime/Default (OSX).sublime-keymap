@@ -28,4 +28,10 @@
 }, {
 	"keys": ["control+u"],
 	"command": "soft_undo"
+}, {
+	"keys": ["command+d"],
+	"command": "mde_toggle_task_list_item",
+	"context": [
+		{ "key": "selector", "operator": "equal", "operand": "text.html.markdown & (markup.list | markup.quote)", "match_all": true }
+	]
 }]

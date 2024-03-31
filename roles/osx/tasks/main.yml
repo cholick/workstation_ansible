@@ -1,8 +1,0 @@
----
-
-- include: finder.yml
-- include: hot_corners.yml
-- include: keyboard.yml
-- include: misc.yml
-- include: trackpad.yml
-- include: terminal.yml

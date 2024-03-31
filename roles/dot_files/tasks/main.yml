@@ -1,7 +1,0 @@
----
-
-- name: Emacs config
-  copy:
-    src: default.el
-    dest: ~/.emacs
-    mode: 0644

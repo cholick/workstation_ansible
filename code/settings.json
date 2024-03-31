@@ -54,7 +54,6 @@
         "GitHub.codespaces",
         "GitHub.vscode-pull-request-github"
     ],
-    "github-enterprise.uri": "https://github.ghe.com",
     "json.schemas": [],
     "terminal.integrated.automationProfile.linux": {},
     "comments.visible": false
