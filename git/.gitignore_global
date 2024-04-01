@@ -1,4 +1,7 @@
 .DS_Store
 .idea
 
+tmp/*
+.ignored
+
 __pycache__
