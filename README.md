@@ -7,7 +7,8 @@ It's now more of a rough set of notes, though it still includes some dotfiles (w
 
 ### Setup
 1. Chrome: login & sync settings (customize to exclude Open Tabs, Passwords, and Payment Methods)
-1. GoLand, PyCharm, Rubymine, Datagrip - configure settings sync
+1. GoLand, PyCharm, Rubymine, Datagrip - configure settings sync. Settings that don't sync:
+   * Advanced Settings -> Markdown -> Toggle "Hide floating toolbar"
 1. Zoom: disable most hotkeys, make hotkeys global
 1. Provision GitHub Personal Access Token: https://github.com/settings/tokens
 
