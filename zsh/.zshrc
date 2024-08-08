@@ -37,6 +37,7 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_EXPIRE_DUPS_FIRST
 
 unsetopt correct
+setopt clobber
 
 # kubectl.docker messes up my "kub↹" completion 
 zstyle ':completion:*' ignored-patterns 'kubectl.docker|kinit|kubelogin|kustomize*'
