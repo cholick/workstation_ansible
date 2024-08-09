@@ -88,8 +88,13 @@ git config --global init.defaultBranch main
 git config --global push.autoSetupRemote true
 git config --global core.excludesfile ~/.gitignore_global
 
-conda config --set env_prompt '({name}) '
-conda config --set auto_activate_base False
+# known_hosts predates servers being ephemeral & makes no sense now
+cat << EOF >  ~/.ssh/config
+Host *
+   StrictHostKeyChecking no
+   UserKnownHostsFile=/dev/null
+EOF
+
 ```
 
 ### Notes
