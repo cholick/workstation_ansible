@@ -1,0 +1,79 @@
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+	"variables":
+	{
+        "blue": "hsl(240, 50%, 55%)",
+        "blue-vibrant": "hsl(240, 60%, 55%)",
+        "blue2": "hsl(180, 36%, 54%)",
+        "green": "hsl(126, 70%, 30%)",
+        "grey": "hsl(0, 0%, 73%)",
+        "grey2": "hsl(0, 0%, 60%)",
+        "grey3": "hsl(0, 0%, 20%)",
+        "orange": "hsl(15, 93%, 66%)",
+        "orange2": "hsl(32, 85%, 55%)",
+        "orange3": "hsl(40, 94%, 68%)",
+        "pink": "hsl(290, 55%, 35%)",
+        "pink2": "hsla(290, 55%, 35%, 0.7)",
+        "red": "hsl(357, 79%, 65%)",
+        "red2": "hsl(13, 93%, 66%)",
+        "red3": "hsl(16, 29%, 54%)",
+        "white": "hsl(0, 0%, 97%)",
+        "white2": "hsl(210, 11%, 85%)",
+        "white3": "hsla(204, 10%, 86%, 0.7)",
+        "white4": "hsl(195, 11%, 93%)",
+        "white5": "hsl(180, 9%, 99%)",
+        "white6": "hsl(250, 10%, 99%)"
+    },
+	"globals":
+    {
+        "background": "var(white6)",
+    },
+	"rules":
+	[
+		{
+            "scope": "keyword, keyword.operator.word",
+            "font_style": "bold"
+        },
+        {
+            "scope": "constant.language",
+            "foreground": "var(pink)",
+            "font_style": "italic"
+        },
+        //markdown
+        {
+            "scope": "markup.heading punctuation.definition.heading",
+            "foreground": "black"
+        },
+        {
+            "scope": "markup.list.numbered.bullet",
+            "foreground": "var(grey2)"
+        },
+        {
+        	"scope": "punctuation.separator.path.markdown",
+        	"foreground": "var(blue)",
+        },
+        {
+        	"scope": "markup.list.unnumbered.markdown markup.checkbox.mark.markdown-gfm",
+        	"foreground": "var(pink)",
+        	"font_style": "bold"
+        },
+        {
+        	"scope": "punctuation.definition.checkbox.begin.markdown-gfm",
+        	"foreground": "var(grey2)"
+        },
+        {
+        	"scope": "punctuation.definition.checkbox.end.markdown-gfm",
+        	"foreground": "var(grey2)"
+        },
+        // json
+        {
+            "scope": "source.json meta.mapping.key.json string.quoted.double.json",
+            "foreground": "var(blue)"
+        },
+        {
+
+        	"scope": "source.json meta.mapping.value.json meta.string.json string.quoted.double.json",
+        	"foreground": "var(green)"
+        }
+	]
+}

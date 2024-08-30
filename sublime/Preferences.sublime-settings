@@ -4,7 +4,7 @@
 		"Cholick",
 		"kubernetes"
 	],
-	"color_scheme": "Packages/Color Scheme - Legacy/Mac Classic.tmTheme",
+	"color_scheme": "Breakers.sublime-color-scheme",
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Menlo",
 	"font_size": 12,
@@ -18,5 +18,6 @@
 	"file_tab_style": "angled",
 	"index_files": true,
 	"mde.auto_fold_link.enabled": false,
+	 // disable smooth scrolling
 	"scroll_speed": 0.0,
 }

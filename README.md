@@ -97,8 +97,14 @@ EOF
 
 ```
 
-### Notes
+### Sublime
+* For color customization, show current scope with: ⌥ + ⌘ + P
+* `Breakers.default.sublime-color-scheme` shouldn't be needed; it's included just in case Sublime removes it
 
+### VSCode
+In theory, settings sync deals with all this. To export settings: `~/Library/Application\ Support/Code/User/settings.json` 
+
+### Notes
 ##### Alred
 * https://github.com/willfarrell/alfred-encode-decode-workflow
 * https://github.com/willfarrell/alfred-hash-workflow

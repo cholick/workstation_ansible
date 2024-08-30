@@ -56,5 +56,13 @@
     ],
     "json.schemas": [],
     "terminal.integrated.automationProfile.linux": {},
-    "comments.visible": false
+    "comments.visible": false,
+    "workbench.list.openMode": "doubleClick",
+    "remote.autoForwardPortsSource": "hybrid",
+    "github.codespaces.usePortForwardingServiceForHTTPS": false,
+    "github.copilot.editor.enableAutoCompletions": false,
+    "github.copilot.editor.enableCodeActions": false,
+    "files.insertFinalNewline": true,
+    "files.autoSave": "onFocusChange",
+    "security.workspace.trust.untrustedFiles": "open"
 }
