@@ -1,7 +1,7 @@
 // Documentation at https://www.sublimetext.com/docs/color_schemes.html
 {
-	"variables":
-	{
+    "variables":
+    {
         "blue": "hsl(240, 50%, 55%)",
         "blue-vibrant": "hsl(240, 60%, 55%)",
         "blue2": "hsl(180, 36%, 54%)",
@@ -24,13 +24,13 @@
         "white5": "hsl(180, 9%, 99%)",
         "white6": "hsl(250, 10%, 99%)"
     },
-	"globals":
+    "globals":
     {
         "background": "var(white6)",
     },
-	"rules":
-	[
-		{
+    "rules":
+    [
+        {
             "scope": "keyword, keyword.operator.word",
             "font_style": "bold"
         },
@@ -39,31 +39,36 @@
             "foreground": "var(pink)",
             "font_style": "italic"
         },
-        //markdown
+        // markdown
+        {
+            "scope": "markup.heading.1.markdown punctuation.definition.heading.begin.markdown",
+            "foreground": "var(grey3)",
+        },
         {
             "scope": "markup.heading punctuation.definition.heading",
-            "foreground": "black"
+            "foreground": "var(grey3)",
         },
         {
             "scope": "markup.list.numbered.bullet",
             "foreground": "var(grey2)"
         },
         {
-        	"scope": "punctuation.separator.path.markdown",
-        	"foreground": "var(blue)",
+            "scope": "punctuation.separator.path.markdown",
+            "foreground": "var(blue)",
         },
         {
-        	"scope": "markup.list.unnumbered.markdown markup.checkbox.mark.markdown-gfm",
-        	"foreground": "var(pink)",
-        	"font_style": "bold"
+            "scope": "markup.list.unnumbered.markdown markup.checkbox.mark.markdown-gfm",
+            "foreground": "var(pink)",
+            "font_style": "bold",
+            "font_style": "glow"
         },
         {
-        	"scope": "punctuation.definition.checkbox.begin.markdown-gfm",
-        	"foreground": "var(grey2)"
+            "scope": "punctuation.definition.checkbox.begin.markdown-gfm",
+            "foreground": "var(grey2)"
         },
         {
-        	"scope": "punctuation.definition.checkbox.end.markdown-gfm",
-        	"foreground": "var(grey2)"
+            "scope": "punctuation.definition.checkbox.end.markdown-gfm",
+            "foreground": "var(grey2)"
         },
         // json
         {
@@ -72,8 +77,8 @@
         },
         {
 
-        	"scope": "source.json meta.mapping.value.json meta.string.json string.quoted.double.json",
-        	"foreground": "var(green)"
+            "scope": "source.json meta.mapping.value.json meta.string.json string.quoted.double.json",
+            "foreground": "var(green)"
         }
-	]
+    ]
 }
