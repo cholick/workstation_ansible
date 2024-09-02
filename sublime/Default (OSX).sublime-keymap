@@ -1,37 +1,13 @@
-[{
-	"keys": ["home"],
-	"command": "move_to",
-	"args": {
-		"to": "bol"
-	}
-}, {
-	"keys": ["end"],
-	"command": "move_to",
-	"args": {
-		"to": "eol"
-	}
-}, {
-	"keys": ["command+end"],
-	"command": "move_to",
-	"args": {
-		"to": "eof"
-	}
-}, {
-	"keys": ["command+home"],
-	"command": "move_to",
-	"args": {
-		"to": "bof"
-	}
-}, {
-	"keys": ["command+shift+u"],
-	"command": "open_url"
-}, {
-	"keys": ["control+u"],
-	"command": "soft_undo"
-}, {
-	"keys": ["command+d"],
-	"command": "mde_toggle_task_list_item",
-	"context": [
+[
+	{"keys": ["home"], "command": "move_to","args": {"to": "bol"}},
+	{"keys": ["end"], "command": "move_to", "args": {"to": "eol"}},
+	{"keys": ["super+end"], "command": "move_to", "args": {"to": "eof"}},
+	{"keys": ["super+home"], "command": "move_to", "args": {"to": "bof"}},
+	{"keys": ["super+shift+u"], "command": "open_url"},
+	{"keys": ["control+u"], "command": "soft_undo"},
+	{"keys": ["shift+super+up"], "command": "swap_line_up" },
+	{"keys": ["shift+super+down"], "command": "swap_line_down" },
+	{"keys": ["super+d"], "command": "mde_toggle_task_list_item", "context": [
 		{ "key": "selector", "operator": "equal", "operand": "text.html.markdown & (markup.list | markup.quote)", "match_all": true }
-	]
-}]
+	]}
+]
