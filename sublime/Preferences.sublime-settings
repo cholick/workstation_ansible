@@ -2,7 +2,10 @@
 	"added_words":
 	[
 		"Cholick",
-		"kubernetes"
+		"kubernetes",
+		"automatable",
+		"Codespaces",
+		"Codespace",
 	],
 	"color_scheme": "Breakers.sublime-color-scheme",
 	"ensure_newline_at_eof_on_save": true,
