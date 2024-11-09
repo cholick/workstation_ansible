@@ -23,7 +23,6 @@ It's now more of a rough set of notes, though it still includes some dotfiles (w
 1. Finder
    * General -> New Finder window -> Desktop
    * View -> Show Path Bar
-   * View -> Show Tab Bar
    * Preferences -> Advanced -> Keep folders on top (both options)
    * Preferences -> Sidebar -> Show Hard disks, Hide air drop
 
