@@ -41,6 +41,7 @@ System:
    * Upper left -> Disable screensaver
    * Lower Left -> Display to sleep
    * Lower right -> Desktop
+1. Desktop & Dock -> Diable all four tiling options (drag windows to edges to tile, etc)
 1. Displays -> Universal Control -> Disable "Push throw edge" and "Automatically reconnect"
 1. Keyboard -> Shortcuts
    1. Toggle on Function keys
