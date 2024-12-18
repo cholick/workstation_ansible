@@ -17,6 +17,7 @@ alias 🐱='cat'
 alias dnsmasq-restart="sudo launchctl stop homebrew.mxcl.dnsmasq && sudo launchctl start homebrew.mxcl.dnsmasq"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias fix-download="sudo xattr -r -d com.apple.quarantine"
+alias clear-pat="git config --local credential.helper ''"
 
 # Configure zsh plugins
 
