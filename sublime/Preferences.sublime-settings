@@ -16,6 +16,7 @@
 		"Vintage",
 	],
 	"open_files_in_new_window": false,
+	"remember_workspace": true,
 	"show_legacy_color_schemes": true,
 	"theme": "Default.sublime-theme",
 	"file_tab_style": "angled",
