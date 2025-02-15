@@ -56,10 +56,16 @@
         	"scope": "punctuation.separator.path.markdown",
         	"foreground": "var(blue)",
         },
-        //no actual strikethrough support in app, https://github.com/sublimehq/sublime_text/issues/5538
+        // Markdown strikethrough - no support in Sublime. See https://github.com/sublimehq/sublime_text/issues/5538
         {
             "scope": "markup.strikethrough",
-            "font_style": "italic"
+            "font_style": "italic",
+            "foreground": "var(grey)",
+        },
+        {
+            "scope": "markup.strikethrough.markdown-gfm",
+            "font_style": "italic",
+            "foreground": "var(grey)",
         },
         {
         	"scope": "markup.list.unnumbered.markdown markup.checkbox.mark.markdown-gfm",
