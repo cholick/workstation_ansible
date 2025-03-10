@@ -55,6 +55,7 @@ System:
       * Mission Control
          * Move left a space: ⌃⌘←
          * Move right a space: ⌃⌘→
+1. Private & Security -> Full Disk Access -> `sshd-keygen-wrapper` (needed for the `rsync`s transferring data across machines)
 1. Notifications -> Allow when mirror/sharing
 1. Trackpad
    * Point and Click -> Secondary Click -> Bottom Right
