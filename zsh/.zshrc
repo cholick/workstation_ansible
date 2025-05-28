@@ -37,6 +37,8 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_EXPIRE_DUPS_FIRST
 
+# Care more about curl with query params than globbing files matches
+setopt NO_NOMATCH
 unsetopt correct
 setopt clobber
 
