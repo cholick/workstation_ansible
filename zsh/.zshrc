@@ -18,8 +18,8 @@ alias dnsmasq-restart="sudo launchctl stop homebrew.mxcl.dnsmasq && sudo launchc
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias fix-download="sudo xattr -r -d com.apple.quarantine"
 alias clear-pat="git config --local credential.helper ''"
-alias cleanup-codespaces="gh codespace list --json name,lastUsedAt | jq -r 'sort_by(.lastUsedAt)[:5][] | .name' | xargs -n1 -I{} gh codespace delete -c {} --force"
-alias slack="killall Slack ; open /Applications/Slack.app/ --args --force-color-profile=srgb"
+alias codespace-cleanup="gh codespace list --json name,lastUsedAt | jq -r 'sort_by(.lastUsedAt)[:5][] | .name' | xargs -n1 -I{} gh codespace delete -c {} --force"
+alias slack-hdr-fix="killall Slack ; open /Applications/Slack.app/ --args --force-color-profile=srgb"
 
 # Configure zsh plugins
 
