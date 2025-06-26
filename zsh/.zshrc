@@ -77,16 +77,10 @@ fix-time() {
 }
 
 
-function setjdk() { if [ $# -ne 0 ];then export JAVA_HOME=`/usr/libexec/java_home -v $@`; fi; java -version; }
-function lsjdk() { ls -1 /System/Library/Java/JavaVirtualMachines/; ls -1 /Library/Java/JavaVirtualMachines/;  }
-
 # Configurations
 export DOCKER_CLI_HINTS=false
 export DOCKER_SCAN_SUGGEST=false
 export EDITOR=vim
-
-export JAVA_HOME=$(/usr/libexec/java_home)
-export _JAVA_OPTIONS="-Xmx2g"
 
 export PATH=/usr/local/bin:$HOME/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=$HOME/Applications/brew/bin:$PATH
