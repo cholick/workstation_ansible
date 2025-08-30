@@ -16,6 +16,7 @@ alias rm='nocorrect rm'
 alias 🐱='cat'
 alias dnsmasq-restart="sudo launchctl stop homebrew.mxcl.dnsmasq && sudo launchctl start homebrew.mxcl.dnsmasq"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias jetbrains="/Applications/GoLand.app/Contents/MacOS/goland -e"
 alias fix-download="sudo xattr -r -d com.apple.quarantine"
 alias clear-pat="git config --local credential.helper ''"
 alias codespace-cleanup="gh codespace list --json name,lastUsedAt | jq -r 'sort_by(.lastUsedAt)[:5][] | .name' | xargs -n1 -I{} gh codespace delete -c {} --force"
