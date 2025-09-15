@@ -75,6 +75,9 @@ defaults write -g AppleShowScrollBars -string "Always"
 defaults write -g com.apple.swipescrolldirection -bool false
 defaults write -g NSScrollAnimationEnabled -bool false
 
+# Tahdo has a really annoying pop-in animation, this turns that off
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+
 defaults write -g AppleShowAllExtensions -bool true
 # Default to list view in finder windows
 defaults write com.apple.finder FXPreferredViewStyle -string Nlsv
