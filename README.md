@@ -61,6 +61,7 @@ System:
    * Point and Click -> Secondary Click -> Bottom Right
    * Point and Click -> Enable tap to click
    * Swipe between pages -> Swith with Three Fingers
+1. Menu Bar -> Show Menu Bar Background
 
 Replacement scirpt for the OSX role
 
